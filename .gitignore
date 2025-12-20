@@ -1,0 +1,41 @@
+# 核心忽略内容
+target/
+*.class
+*.log
+logs/
+
+# 如果不想上传 HELP.md，取消下面这行的注释
+# HELP.md
+
+# IntelliJ IDEA (必须忽略)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# STS / Eclipse
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+# VS Code
+.vscode/
+
+# Maven 包装器 (可选，通常保留 ! 开头的行表示不忽略，这里为了简洁可以不管)
+!.mvn/wrapper/maven-wrapper.jar
+
+# 系统文件
+.DS_Store
+Thumbs.db
