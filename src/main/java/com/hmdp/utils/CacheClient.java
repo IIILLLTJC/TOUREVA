@@ -154,6 +154,7 @@ public class CacheClient {
 
     private boolean tryLock(String key) {
         Boolean flag = stringRedisTemplate.opsForValue().setIfAbsent(key, "1", 10, TimeUnit.SECONDS);
+        //只有setIfAbsent成功才会返回ture
         //return BooleanUtil.isTrue(flag);
         return Boolean.TRUE.equals(flag);
     }
